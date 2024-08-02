@@ -13,7 +13,8 @@ module.exports = {
       'res.craft.do',
       'res.cloudinary.com',
       'nextjs-notion-blog-starter.vercel.app',
-      'prod-files-secure.s3.us-west-2.amazonaws.com'
+      'prod-files-secure.s3.us-west-2.amazonaws.com',
+      'vulncure.com'
     ]
   }
 };

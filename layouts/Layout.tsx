@@ -2,6 +2,7 @@ import Subscribe from 'components/Subscribe';
 import Footer from './Footer';
 import Header from './Navbar';
 import { MetaHead } from './MetaHead';
+import DarkModeToggle from '../components/DarkModeToggle';
 
 export function Layout(props) {
   const { children, date, imageUrl, title, description, ogUrl, blog } = props;
@@ -21,7 +22,10 @@ export function Layout(props) {
     <>
       <MetaHead {...metaHeadProps} />
       <Header />
-      <div className="pt-14">{children}</div>
+      <div className="pt-14">
+        <DarkModeToggle />
+        {children}
+      </div>
       {FORM_ID && API_KEY && <Subscribe />}
       <Footer blog={blog} />
     </>
